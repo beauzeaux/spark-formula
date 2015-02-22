@@ -1,0 +1,7 @@
+{% set spark = salt['grains.filter_by']({
+    'default': {
+        'install_dir' : '/opt/spark/',
+        'source' : 'http://mirror.cc.columbia.edu/pub/software/apache/spark/spark-1.2.1/spark-1.2.1-bin-hadoop2.4.tgz',
+        'source_hash' : 'md5=c74ebbb6bc45c77f5e7352a82ef6f8cd'
+    }, 
+}, merge=salt['pillar.get']('spark:lookup')) %}

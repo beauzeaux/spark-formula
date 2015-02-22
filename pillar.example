@@ -1,3 +1,4 @@
-template:
-  lookup:
-    master: template-master
+spark:
+  install_dir: '/opt/spark'
+  source: 'http://d3kbcqa49mib13.cloudfront.net/spark-1.2.1-bin-hadoop2.4.tgz'
+  source_hash: 'md5=c74ebbb6bc45c77f5e7352a82ef6f8cd'

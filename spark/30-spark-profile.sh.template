@@ -1,0 +1,5 @@
+{% from "spark/map.jinja" import spark with context %}
+
+export SPARK_HOME={{ spark.install_dir }}
+export PYTHONPATH="$SPARK_HOME/python/:$PYTHONPATH"
+export PYTHONPATH="$SPARK_HOME/python/lib/py4j-0.8.2.1-src.zip:$PYTHONPATH"
