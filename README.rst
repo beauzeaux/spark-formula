@@ -1,9 +1,8 @@
 ================
-template-formula
+spark-formula
 ================
 
-A saltstack formula that is empty. It has dummy content to help with a quick
-start on a new formula.
+A saltstack formula that installs spark and configures associated environment variables.
 
 .. note::
 
@@ -16,7 +15,7 @@ Available states
 .. contents::
     :local:
 
-``template``
+``spark``
 ------------
 
-Installs the template package, and starts the associated template service.
+Installs spark and sets spark environment variables. (`SPARK_HOME` and `PYTHONPATH`)
