@@ -1,0 +1,16 @@
+{% from "spark/map.jinja" import spark with context %}
+
+<configuration>
+	<property>
+		<name>fs.gs.impl</name>
+		<value>com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem</value>
+	</property>
+	<property>
+		<name>fs.gs.project.id</name>
+		<value>{{spark.gs.project_id}}</value>
+	</property>
+	<property>
+		<name>fs.gs.system.bucket</name>
+		<value>{{spark.gs.bucket}}</value>
+	</property>
+</configuration>
